@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "92841d02d8e79c3dc1ed43a03ed32565"
+name = "new-tailwind-app"
+handle = "new-tailwind-app"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+
+[build]
+dev_store_url = "check-css.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false

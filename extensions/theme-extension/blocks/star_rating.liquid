@@ -1,0 +1,23 @@
+<div id="root">
+  {% liquid
+    # Relative to entrypointsDir
+    render 'vite-tag' with 'theme.css'
+    render 'vite-tag' with 'theme.tsx'
+  %}
+</div>
+
+<script>
+  const home = {{ request.path | json }}
+</script>
+
+{% schema %}
+{
+  "name": "ReConvert",
+    "javascript": "theme.js",
+"stylesheet": "theme.css",
+  "target": "section",
+  "settings": []
+}
+{% endschema %}
+
+

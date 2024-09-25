@@ -1,0 +1,16 @@
+{
+  "src/entrypoints/index.css": {
+    "file": "theme.css",
+    "src": "src/entrypoints/index.css",
+    "isEntry": true
+  },
+  "src/entrypoints/main.tsx": {
+    "file": "theme.js",
+    "name": "theme",
+    "src": "src/entrypoints/main.tsx",
+    "isEntry": true,
+    "css": [
+      "theme.css"
+    ]
+  }
+}
